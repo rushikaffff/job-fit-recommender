@@ -1,13 +1,14 @@
-# node
+# Node
 node_modules/
 
-# env files
+# Env files
 .env
 
-# build
-dist/
-build/
-
-# logs
+# Logs
 npm-debug.log*
 yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
