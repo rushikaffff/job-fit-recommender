@@ -1,49 +1,43 @@
-/* ===== RIGHT SIDE FORM ===== */
+.register-page {
+  width: 100%;
+}
+
+.register-row {
+  min-height: 100vh;
+}
+
+/* LEFT */
+.slider-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* RIGHT */
+.form-col {
+  padding: 2rem;
+  background-color: #f8f9fa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .register-card {
   width: 100%;
   max-width: 400px;
-  border-radius: 12px;
   padding: 2rem;
   background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
 }
 
-.register-card input {
-  height: 45px;
-  border-radius: 8px;
-  padding: 0 15px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-
-.register-card input:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0,123,255,0.5);
-}
-
-.register-card button {
-  height: 45px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.register-card button:hover {
-  background-color: #0056b3;
-  cursor: pointer;
-}
-
-.register-card h3 {
-  font-weight: bold;
-}
-
-.register-card p a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.register-card p a:hover {
-  text-decoration: underline;
-}
-

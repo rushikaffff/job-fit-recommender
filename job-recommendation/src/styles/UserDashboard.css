@@ -1,0 +1,98 @@
+/* ROOT */
+.dashboard-root {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* NAVBAR */
+.dashboard-navbar {
+  height: 56px;
+  z-index: 3000;
+}
+
+/* TOGGLE BUTTON */
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 4000;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* FLEX BODY */
+.dashboard-body {
+  display: flex;
+  margin-top: 56px;
+}
+
+/* SIDEBAR SPACER */
+.sidebar-spacer {
+  width: 0;
+  flex-shrink: 0;
+  transition: width 0.3s ease;
+}
+
+.sidebar-spacer.open {
+  width: 220px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 220px;
+  height: calc(100vh - 56px);
+  background: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 15px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 2500;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ICON CIRCLE */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f1f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* JOB CARD */
+.job-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* MAP */
+.map-container {
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* Space between toggle button and SkillHire */
+.brand-spacing {
+  margin-left: 60px; /* adjust as you like */
+  font-weight: 600;
+}

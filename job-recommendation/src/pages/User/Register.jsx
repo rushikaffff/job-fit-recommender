@@ -1,6 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "../../styles/Register.css";
 import ImageSlider from "../../components/ImageSlider";
+import { Link } from "react-router-dom";
 
 function Register() {
   const [name, setName] = useState("");
@@ -9,7 +10,6 @@ function Register() {
 
   // Errors state
   const [errors, setErrors] = useState({});
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -38,7 +38,7 @@ function Register() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
-      });
+      }); 
 
       const result = await response.json();
 
@@ -47,7 +47,7 @@ function Register() {
         setEmail("");
         setPassword("");
         setErrors({});
-        alert("Registration successful!");
+       window.location.href = "/UserDashboard";
       } else {
         // show backend error
         setErrors({ backend: result.message });
@@ -78,7 +78,7 @@ function Register() {
                   onChange={(e) => setName(e.target.value)}
                 />
                 {errors.name && (
-                  <small className="text-danger">{errors.name}</small>
+              <small className="text-danger">{errors.name}</small>
                 )}
               </div>
 
@@ -120,7 +120,7 @@ function Register() {
             </form>
 
             <p className="text-center">
-              Already have an account? <a href="/login">Login</a>
+              Already have an account? <Link to="/login">Login</Link>
             </p>
           </div>
         </div>
