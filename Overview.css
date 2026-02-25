@@ -1,0 +1,310 @@
+/* 🔥 SKILLHIRE OVERVIEW 2026 - FIXED FULL WIDTH + PERFECT SPACING + GREEN LOGOS */
+.overview-content, .common-gradient-bg {
+  animation: fadeIn 0.6s ease-out;
+  min-height: 100vh;
+  padding: 1rem 0;
+  margin-left: 0 !important; /* 🔥 FULL WIDTH - NO SIDEBAR OFFSET */
+  margin-right: 0 !important;
+  width: 100vw !important; /* 🔥 PERFECT FULL WIDTH */
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* 🔥 COMMON PAGE BACKGROUND */
+.common-gradient-bg {
+  background: linear-gradient(135deg, #d9ebf7 0%, #e8d5ec 50%, #ffe8c7 100%);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔥 FIXED LOGO TEXT - GREEN DEFAULT */
+.glass-stat-card .w-20,
+.stat-metric .w-20 {
+  width: 76px !important;
+  min-width: 76px !important;
+  height: 76px !important;
+  font-size: 1.6rem !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* 🔥 WHITE/GREEN TOTAL COMPANIES CARD */
+.glass-stat-card, .stat-metric {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(40px) !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  border-radius: 36px !important;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.18) !important;
+  padding: 1.5rem !important;
+  margin: 0.25rem !important;
+}
+
+/* ⭐ VIBRANT PREMIUM HOVER (NOT GREEN) */
+.glass-stat-card:hover, .stat-metric:hover {
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(99,102,241,0.12)) !important;
+  border-color: rgba(99,102,241,0.7) !important;
+  box-shadow: 
+    0 40px 120px rgba(99,102,241,0.35),
+    0 0 40px rgba(168,85,247,0.35) !important;
+  transform: translateY(-16px) scale(1.03) !important;
+}
+
+/* ⭐ LOGOS TURN VIBRANT ON HOVER */
+.glass-stat-card:hover .w-20,
+.stat-metric:hover .w-20,
+.glass-modern-card:hover .w-20 {
+  background: linear-gradient(135deg, #6366f1, #a855f7, #f59e0b) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* 🔥 GREEN PENDING STATUS BAR */
+.status-bar-pending {
+  height: 8px !important;
+  background: linear-gradient(90deg, #10b981, #059669, #047857) !important;
+  border-radius: 4px !important;
+  margin: 0.5rem 0 !important;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* 🔥 PENDING CARDS */
+.glass-modern-card {
+  background: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(45px) !important;
+  border: 1px solid rgba(16, 185, 129, 0.5) !important;
+  border-radius: 32px !important;
+  box-shadow: 0 25px 80px rgba(16, 185, 129, 0.2) !important;
+  padding: 1.5rem !important;
+  margin: 0.25rem !important;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* ⭐ VIBRANT HOVER FOR PENDING CARDS */
+.glass-modern-card:hover {
+  background: rgba(255, 255, 255, 0.6) !important;
+  border-color: rgba(99,102,241,0.7) !important;
+  box-shadow: 
+    0 40px 120px rgba(99,102,241,0.35),
+    0 0 40px rgba(168,85,247,0.35) !important;
+  transform: translateY(-12px) scale(1.02) !important;
+}
+
+/* 🔥 FIXED PENDING COMPANY LOGOS (GREEN DEFAULT) */
+.glass-modern-card .w-20 {
+  width: 68px !important;
+  height: 68px !important;
+  font-size: 1.4rem !important;
+  font-weight: 900 !important;
+  line-height: 1.1 !important;
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* 🔥 NO SPACING - QUICK ACTIONS & REVIEW */
+.quick-actions-grid, .review-section {
+  margin: 0.5rem 0 !important;
+  padding: 0.5rem !important;
+}
+
+.quick-action-btn {
+  padding: 1rem 1.5rem !important;
+  margin: 0.25rem !important;
+  border-radius: 20px !important;
+  font-weight: 900;
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 32px !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+}
+
+/* 🔥 ICONS ON WHITE BG */
+.glass-stat-card .text-white,
+.glass-modern-card .text-white {
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4)) !important;
+}
+
+/* 🔥 HEADERS */
+.royal-purple-header, .navy-header {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  color: white !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  line-height: 1.1;
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  background: linear-gradient(135deg, rgba(45, 27, 78, 0.95), rgba(58, 42, 95, 0.95));
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 48px rgba(45, 27, 78, 0.4);
+  margin: 0.5rem 0 !important;
+}
+
+.navy-header-small {
+  font-size: 2rem;
+  font-weight: 900;
+  color: white !important;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(51, 65, 85, 0.9));
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0.5rem 0 !important;
+}
+
+/* 🔥 DASHBOARD CONTAINERS */
+.dashboard-container {
+  margin: 1rem 0 !important;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(25px);
+  border-radius: 36px;
+  padding: 2rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.12);
+}
+
+/* 🔥 METRICS GRID */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1rem !important;
+  margin: 0.5rem 0 !important;
+}
+
+.pending-grid-container {
+  max-width: 1400px;
+  margin: 0.5rem 0 !important;
+}
+
+.pending-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem !important;
+}
+
+/* 🔥 GLASS CARDS */
+.glass-card {
+  background: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(45px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  border-radius: 32px !important;
+  box-shadow: 0 35px 110px rgba(0, 0, 0, 0.15) !important;
+  padding: 1.5rem !important;
+  margin: 0.25rem !important;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* 🔥 ACTION BUTTONS */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem !important;
+}
+
+.approve-btn, .reject-btn {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px !important;
+  backdrop-filter: blur(20px);
+  margin: 0 !important;
+}
+
+.approve-btn {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.approve-btn:hover {
+  transform: translateY(-6px) scale(1.15);
+  box-shadow: 0 20px 60px rgba(16, 185, 129, 0.6);
+}
+
+.reject-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.reject-btn:hover {
+  transform: translateY(-6px) scale(1.15);
+  box-shadow: 0 20px 60px rgba(239, 68, 68, 0.6);
+}
+
+/* 🔥 HIDE MATCH SCORE */
+.match-badge, .match-badge-number {
+  display: none !important;
+}
+
+/* 🔥 RESPONSIVE */
+@media (max-width: 1024px) {
+  .metrics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.75rem !important;
+  }
+  
+  .pending-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 0.75rem !important;
+  }
+  
+  .dashboard-container {
+    padding: 1.5rem !important;
+    margin: 0.5rem 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    margin: 0.25rem 0 !important;
+    padding: 1rem !important;
+    border-radius: 24px;
+  }
+  
+  .metrics-grid, .pending-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem !important;
+  }
+  
+  .glass-stat-card .w-20,
+  .stat-metric .w-20 {
+    width: 64px !important;
+    height: 64px !important;
+    font-size: 1.3rem !important;
+  }
+  
+  .glass-modern-card .w-20 {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 1.2rem !important;
+  }
+  
+  .overview-content {
+    padding: 0.5rem !important;
+  }
+}

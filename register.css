@@ -1,0 +1,84 @@
+/* ================= REGISTER PAGE — FINAL STABLE VERSION ================= */
+
+/* ===== PAGE FULL HEIGHT ===== */
+.container-fluid {
+  height: 100vh;
+  padding: 0;
+}
+
+.row.vh-100 {
+  height: 100vh;
+  margin: 0;
+}
+
+/* ===== LEFT IMAGE SIDE ===== */
+/* allow slick to calculate width correctly */
+/* LEFT IMAGE COLUMN — layout control */
+.col-md-7 {
+  min-width: 0;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* prevent flex shrink issues */
+.slider-container {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ===== RIGHT FORM SIDE ===== */
+.col-md-5 {
+  height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CARD ===== */
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  background: white;
+}
+
+/* form spacing */
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* inputs clean look */
+.register-card .form-control {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* button polish */
+.register-card .btn-primary {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .col-md-7 {
+    display: none;
+  }
+
+  .col-md-5 {
+    width: 100%;
+  }
+
+  .register-card {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,198 @@
+/* 🔥 SKILLHIRE USERS TAB 2026 - FIXED ACTIVE USER HALF SCREEN */
+
+/* 🔥 1. USERS TABLE = PERFECT 5-COLUMN LAYOUT */
+.table-row-header,
+.glass-card,
+.table-row {
+  display: grid !important;
+  grid-template-columns: 2.5fr 2fr 1.2fr 1.2fr 1fr !important;
+  gap: 1rem !important;
+  padding: 1.25rem 1rem !important;
+  border-radius: 20px !important;
+  margin-bottom: 0.75rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease !important;
+  overflow: hidden !important;
+}
+
+/* ✅ KEEP ONLY ONE RULE - ADD TO MAIN CSS */
+.admin-content:not(.no-sidebar):not([class*="company"]):not([class*="overview"]) {
+  margin-left: 150px !important;                    /* 🔥 YOUR FINAL CHOICE */
+  width: calc(100vw - 150px) !important;           /* 🔥 PERFECT MATH MATCH */
+  padding: 1rem !important;
+  transition: margin-left 0.3s ease !important;
+}
+
+.admin-content.collapsed-content:not(.no-sidebar):not([class*="company"]):not([class*="overview"]) {
+  margin-left: 72px !important;
+  width: calc(100vw - 72px) !important;
+}
+/* 🔥 3. TABLE HEADER ROW */
+.table-row-header {
+  background: rgba(255, 255, 255, 0.6) !important;
+  border-bottom: 3px solid rgba(16, 185, 129, 0.3) !important;
+  border-radius: 16px !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+}
+
+/* 🔥 4. DASHBOARD CONTAINER - FULL WIDTH INSIDE ADMIN */
+.dashboard-container {
+  max-width: 100% !important;           /* 🔥 USE FULL ADMIN WIDTH */
+  margin: 0 !important;
+  padding: 2rem !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(25px) !important;
+  border-radius: 36px !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.12) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 🔥 5. TABLE CONTAINER - FULL WIDTH */
+.modern-table-container {
+  background: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(45px) !important;
+  border: 1px solid rgba(16, 185, 129, 0.5) !important;
+  border-radius: 32px !important;
+  padding: 1.5rem !important;
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+  width: 100% !important;
+}
+
+/* 🔥 6. ALL ESSENTIAL STYLES */
+.w-20 {
+  width: 68px !important;
+  height: 68px !important;
+  font-size: 1.4rem !important;
+  font-weight: 900 !important;
+  background: linear-gradient(135deg, #10b981, #059669, #047857) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 12px !important;
+  flex-shrink: 0 !important;
+}
+
+.search-modern {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 24px !important;
+  padding: 1rem 1.5rem !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+  max-width: 600px !important;
+  margin: 0 auto 2rem !important;
+}
+
+.action-buttons {
+  display: flex !important;
+  gap: 0.5rem !important;
+  justify-content: flex-end !important;
+}
+
+.approve-btn {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  color: white !important;
+  cursor: pointer !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+}
+
+.reject-btn {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+  color: white !important;
+  cursor: pointer !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+}
+
+.navy-header-small {
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+  color: white !important;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(51, 65, 85, 0.9)) !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 20px !important;
+  backdrop-filter: blur(15px) !important;
+}
+
+/* 🔥 7. STATUS BADGES */
+.bg-emerald-100 { 
+  background: rgba(16, 185, 129, 0.15) !important; 
+  border: 2px solid rgba(16, 185, 129, 0.3) !important; 
+  padding: 0.5rem 1rem !important;
+  border-radius: 9999px !important;
+}
+.text-emerald-800 { color: #047857 !important; }
+.bg-orange-100 { 
+  background: rgba(251, 146, 60, 0.15) !important; 
+  border: 2px solid rgba(251, 146, 60, 0.3) !important; 
+  padding: 0.5rem 1rem !important;
+  border-radius: 9999px !important;
+}
+.text-orange-800 { color: #9a3412 !important; }
+.bg-sky-100 { 
+  background: rgba(14, 165, 233, 0.15) !important; 
+  border: 2px solid rgba(14, 165, 233, 0.3) !important; 
+  padding: 0.5rem 1rem !important;
+  border-radius: 9999px !important;
+}
+.text-sky-800 { color: #0e7490 !important; }
+
+/* 🔥 8. TABLE CELLS */
+.table-cell {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0.5rem 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* 🔥 9. RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-content:not(.no-sidebar) {
+    margin-left: 0 !important;
+    width: 100vw !important;
+    padding: 0.5rem !important;
+  }
+  
+  .table-row-header, .glass-card, .table-row {
+    grid-template-columns: 2fr 1.8fr 1fr 1fr 0.8fr !important;
+    gap: 0.5rem !important;
+    padding: 0.75rem 0.5rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  .w-20 { width: 44px !important; height: 44px !important; font-size: 1rem !important; }
+  .approve-btn, .reject-btn { width: 40px !important; height: 40px !important; }
+}
+
+/* 🔥 10. HOVER EFFECTS */
+.glass-card:hover, .table-row:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 25px 80px rgba(16, 185, 129, 0.2) !important;
+  border-color: rgba(16, 185, 129, 0.6) !important;
+}
